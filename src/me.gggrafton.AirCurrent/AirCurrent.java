@@ -379,10 +379,12 @@ public class AirCurrent extends AirAbility implements AddonAbility {
     @Override public Location getLocation() { return head != null ? head.clone() : null; }
     @Override public String getName() { return NAME; }
     @Override public String getDescription() {
-        return "Guide a compressed air cluster and, while gliding with an Elytra, right-click to surge forward on a current of air.";
+        return "Compress and guide a cluster of air that lifts and draws entities along your aim. You can also use it as a boost during Elytra flight!";
     }
     @Override public String getInstructions() {
-        return "Bind " + NAME + ". Tap sneak to set origin, left-click to start the cluster, left-click again to launch it. Left-click while Elytra gliding to boost.";
+        return "Usage: Bind " + NAME + ". Tap sneak while looking at a block to set the origin, then Left-click in the air to activate.\n" +
+                "Sneak to pull it closer, release to push back. Left-click again to launch.\n" +
+                "Left-click during Elytra flight for a boost."
     }
     @Override public boolean isHarmlessAbility() { return false; }
     @Override public boolean isSneakAbility() { return false; }
